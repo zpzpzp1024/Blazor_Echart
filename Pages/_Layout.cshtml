@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace Blazor_Echart.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link href="Blazor_Echart.styles.css" rel="stylesheet" />
+    <script src="https://lib.baomitu.com/echarts/5.3.3/echarts.min.js"></script>
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
+<body>
+    @RenderBody()
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script type="module" src="_content/Blazor.ECharts/core.js"></script>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

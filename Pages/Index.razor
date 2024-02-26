@@ -1,0 +1,188 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="backgroundDiv">
+    <MudGrid Spacing="0" Justify="Justify.Center">
+        @*  <MudItem>
+
+        <MudPaper Height="140px" Width="140px" />
+        <MudPaper Height="140px" Width="140px" />
+        </MudItem>
+        <MudItem>
+        <MudPaper Height="140px" Width="140px" />
+        <MudPaper Height="140px" Width="140px" />
+        </MudItem> *@
+        <MudItem>
+            <div Class="middleItem">
+                <div class="middleItem1">
+                    <div class="jiandanyouxiao">简单</div>
+                    <div class="middleItem11">
+                        <MudImage Src="images/1.png" Width="500" />
+                        <p id="LC01">LC01库可视化管理平台-IMLUDA</p>
+                    </div>
+                    <div class="jiandanyouxiao">有效</div>
+                </div>
+
+                <div class="middleItem2">
+                    <div style="color:#0efcff;margin-top:20px;margin-right:10px">今日完成任务</div>
+                    <div class="jinrirenwu">
+                        <MudImage Src="images/2.png" Width="50" />
+                        <p>1</p>
+                    </div>
+                    <div class="jinrirenwu">
+                        <MudImage Src="images/2.png" Width="50" />
+                        <p>1</p>
+                    </div>
+                    <div class="jinrirenwu">
+                        <MudImage Src="images/2.png" Width="50" />
+                        <p>1</p>
+                    </div>
+                    <div class="jinrirenwu">
+                        <MudImage Src="images/2.png" Width="50" />
+                        <p>1</p>
+                    </div>
+                    <div class="jinrirenwu">
+                        <MudImage Src="images/2.png" Width="50" />
+                        <p>1</p>
+                    </div>
+                </div>
+
+                <div class="middleItem3">
+                    <ELine Class="chart-normal">
+                        {
+                        title: {
+                        text: '30日库存波动图',
+                        textStyle:{
+                        color:'#0efcff',
+                        fontSize:12,
+
+                        }
+                        },
+
+
+                        tooltip: {
+                        trigger: 'axis'
+                        },
+
+                        legend: {
+                        data: ['库存数', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],
+                        left:'right',
+                        textStyle:{
+                        color:'#0efcff',
+                        fontSize:12,
+                        }
+                        },
+
+                        grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                        },
+
+                        xAxis: [{
+                        type: "category",
+                        data: [1,2,3,4,5,6,7],
+                        axisLabel: {
+                        color: '#0efcff',
+                        formatter: '{d}'
+                        }
+                        }],
+
+                        yAxis: [{
+                        type: "value",
+                        minInterval: 1,
+                        axisLabel: {
+                        color: '#0efcff'
+                        }
+                        }],
+
+                        series: [
+                        {
+                        name: '库存数',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [120, 132, 101, 134, 90, 230, 210]
+                        },
+                        ]
+
+
+
+                        }
+                    </ELine>
+                    <ELine Class="chart-normal">
+                        {
+                        title: {
+                        text: '30日库存波动图',
+                        textStyle:{
+                        color:'#0efcff',
+                        fontSize:12,
+
+                        }
+                        },
+
+
+                        tooltip: {
+                        trigger: 'axis'
+                        },
+
+                        legend: {
+                        data: ['库存数', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],
+                        left:'right',
+                        textStyle:{
+                        color:'#0efcff',
+                        fontSize:12,
+                        }
+                        },
+
+                        grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                        },
+
+                        xAxis: [{
+                        type: "category",
+                        data: [1,2,3,4,5,6,7],
+                        axisLabel: {
+                        color: '#0efcff',
+                        formatter: '{d}'
+                        }
+                        }],
+
+                        yAxis: [{
+                        type: "value",
+                        minInterval: 1,
+                        axisLabel: {
+                        color: '#0efcff'
+                        }
+                        }],
+
+                        series: [
+                        {
+                        name: '库存数',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [120, 132, 101, 134, 90, 230, 210]
+                        },
+                        ]
+
+
+
+                        }
+                    </ELine>
+                </div>
+            </div>
+        </MudItem>
+        @*  <MudItem>
+        <MudPaper Height="140px" Width="140px" />
+        <MudPaper Height="140px" Width="140px" />
+        </MudItem>
+        <MudItem>
+        <MudPaper Height="140px" Width="140px" />
+        <MudPaper Height="140px" Width="140px" />
+        </MudItem> *@
+    </MudGrid>
+</div>
